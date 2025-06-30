@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import HomePage from "./pages/HomePage";
 import Header from "./components/Headers/Header";
 import Footer from "./components/Footer/Footer";
-import ContactPage from "./pages/ContactPage";
-import "./styles/pages.css";
-import AboutPage from "./pages/AboutPage";
-import CoursesPage from "./pages/CoursesPage";
-import AdmissionsPage from "./pages/AdmissionsPage";
-import NotFoundPage from "./pages/NotFoundPage";
+import "./Styles/pages.css";
 import { useState } from "react";
 import DeveloperInfoPopup from "./components/DeveloperInfo/DeveloperInfoPopup";
 import ChatbotComponents from "./components/Chatbot/ChatbotComponents"
+import NotFound from "./mainpage/NotFound";
+import Home from "./mainpage/Home";
+import Contact from "./mainpage/Contact";
+import About from "./mainpage/About";
+import Courses from "./mainpage/Courses";
+import Admissions from "./mainpage/Admission";
 
 const App =()=> {
   const [showPopup, setShowPopup] = useState(true);
@@ -35,12 +35,12 @@ const App =()=> {
         <Header />
         <div className="content">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/courses" element={<CoursesPage />} />
-            <Route path="/admissions" element={<AdmissionsPage />} />
-            <Route path="*" element={<NotFoundPage />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact/>} />
+            <Route path="/about" element={<About />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/admissions" element={<Admissions />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <Footer />

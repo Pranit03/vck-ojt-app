@@ -1,4 +1,4 @@
-const AboutPages=()=>{
+const About =()=>{
     return(
     
     <div className="page-container" style={{overflow:"auto"}}>
@@ -27,4 +27,4 @@ const AboutPages=()=>{
         </div>
     )
 }
-export default AboutPages;
+export default About;

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; 
-const HomePage = () => {
+const Home = () => {
   return (
     <div className="page-container" style={{ overflow: "auto" }}>
       <div className="hero-section">
@@ -72,4 +72,4 @@ const HomePage = () => {
     </div>
   );
 };
-export default HomePage;
+export default Home;
